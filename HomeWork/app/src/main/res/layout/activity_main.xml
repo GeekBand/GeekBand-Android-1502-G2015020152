@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:text="QUANTITY"
+        android:textSize="18sp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_height="40dp"
+        >
+
+        <Button
+            android:id="@+id/btn_del"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="-"
+            android:gravity="center"
+            android:textSize="18sp"
+            />
+
+        <TextView
+            android:id="@+id/tv_num"
+            android:layout_width="40dp"
+            android:layout_height="30dp"
+            android:layout_toRightOf="@id/btn_del"
+            android:text="0"
+            android:gravity="center"
+            android:layout_alignParentBottom="true"
+            />
+
+
+        <Button
+            android:id="@+id/btn_add"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/tv_num"
+            android:text="+"
+            android:gravity="center"
+            android:textSize="18sp"
+            android:layout_centerHorizontal="true"
+            />
+
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:text="PRICE"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/tv_price"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:text="$0"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/btn_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:text="order"
+        android:textSize="18sp" />
+
+
+
+
+
+
+</LinearLayout>
