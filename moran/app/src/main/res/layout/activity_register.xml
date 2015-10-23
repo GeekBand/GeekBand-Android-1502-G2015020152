@@ -8,10 +8,9 @@
     tools:context="com.geekband.moran.activity.LoginActivity">
 
     <ScrollView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
         android:id="@+id/scrollView"
-        >
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -19,115 +18,136 @@
             android:background="@color/bg_login_register"
             android:orientation="vertical">
 
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="150dp"
-            android:background="@color/all_background"
-            android:gravity="center">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:background="@color/all_background"
+                android:gravity="center">
 
-            <com.geekband.moran.customview.CircleImageView
-                android:id="@+id/circle_img"
-                android:layout_width="60dp"
-                android:layout_height="60dp"
-                android:layout_gravity="center"
-                android:src="@drawable/menu_publish" />
+                <com.geekband.moran.customview.CircleImageView
+                    android:id="@+id/circle_img"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/menu_publish" />
+
+                <TextView
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/circle_img"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center"
+                    android:text="蓦然"
+                    android:textColor="@color/white"
+                    android:textSize="20sp" />
+            </RelativeLayout>
 
             <TextView
-                android:layout_width="60dp"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_below="@id/circle_img"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="15dp"
+                android:text="@string/register_username"
+                android:textColor="@color/login_tv"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/edt_register_username"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
                 android:layout_marginTop="10dp"
-                android:gravity="center"
-                android:text="蓦然"
+                android:background="@drawable/white_bg_shape"
+                android:padding="3dp"
+                android:textSize="18sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="15dp"
+                android:text="@string/login_tv_email"
+                android:textColor="@color/login_tv"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/edt_register_email"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/white_bg_shape"
+                android:padding="3dp"
+                android:textSize="18sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="15dp"
+                android:text="@string/login_tv_pwd"
+                android:textColor="@color/login_tv"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/edt_register_pwd"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/white_bg_shape"
+                android:inputType="textPassword"
+                android:padding="3dp"
+                android:textSize="18sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="15dp"
+                android:text="@string/login_tv_pwd_again"
+                android:textColor="@color/login_tv"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/edt_register_pwd_again"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/white_bg_shape"
+                android:inputType="textPassword"
+                android:padding="3dp"
+                android:textSize="18sp" />
+
+            <Button
+                android:id="@+id/btn_register"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/orange_bg_shape"
+                android:text="@string/register"
                 android:textColor="@color/white"
-                android:textSize="20sp" />
-        </RelativeLayout>
+                android:textSize="16sp" />
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="15dp"
-            android:layout_marginTop="15dp"
-            android:text="@string/login_tv_email"
-            android:textColor="@color/login_tv"
-            android:textSize="14sp" />
-
-        <EditText
-            android:id="@+id/edt_login_email"
-            android:layout_width="match_parent"
-            android:layout_height="40dp"
-            android:layout_marginLeft="15dp"
-            android:layout_marginRight="15dp"
-            android:layout_marginTop="10dp"
-            android:background="@drawable/white_bg_shape"
-            android:hint="@string/input_email"
-            android:padding="3dp"
-            android:textSize="18sp" />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="15dp"
-            android:layout_marginTop="15dp"
-            android:text="@string/login_tv_pwd"
-            android:textColor="@color/login_tv"
-            android:textSize="14sp" />
-
-        <EditText
-            android:id="@+id/edt_login_pwd"
-            android:layout_width="match_parent"
-            android:layout_height="40dp"
-            android:layout_marginLeft="15dp"
-            android:layout_marginRight="15dp"
-            android:layout_marginTop="10dp"
-            android:background="@drawable/white_bg_shape"
-            android:padding="3dp"
-            android:textSize="18sp" />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="15dp"
-            android:layout_marginTop="15dp"
-            android:text="@string/login_tv_pwd_again"
-            android:textColor="@color/login_tv"
-            android:textSize="14sp" />
-
-        <EditText
-            android:id="@+id/edt_login_pwd_again"
-            android:layout_width="match_parent"
-            android:layout_height="40dp"
-            android:layout_marginLeft="15dp"
-            android:layout_marginRight="15dp"
-            android:layout_marginTop="10dp"
-            android:background="@drawable/white_bg_shape"
-            android:padding="3dp"
-            android:textSize="18sp" />
-
-        <Button
-            android:id="@+id/btn_register"
-            android:layout_width="match_parent"
-            android:layout_height="40dp"
-            android:layout_marginLeft="15dp"
-            android:layout_marginRight="15dp"
-            android:layout_marginTop="20dp"
-            android:background="@drawable/orange_bg_shape"
-            android:text="@string/register"
-            android:textColor="@color/white"
-            android:textSize="16sp" />
-
-        <TextView
-            android:id="@+id/tv_register_login"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:layout_marginLeft="15dp"
-            android:layout_marginRight="15dp"
-            android:layout_marginTop="15dp"
-            android:gravity="center_vertical"
-            android:text="@string/register_login"
-            android:textColor="@color/login_tv"
-            android:textSize="16sp" />
+            <TextView
+                android:id="@+id/tv_register_login"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="15dp"
+                android:gravity="center_vertical"
+                android:text="@string/register_login"
+                android:textColor="@color/login_tv"
+                android:textSize="16sp" />
 
         </LinearLayout>
     </ScrollView>

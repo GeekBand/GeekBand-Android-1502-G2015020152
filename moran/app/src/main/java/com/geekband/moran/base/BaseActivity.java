@@ -7,7 +7,6 @@ import android.view.MenuItem;
 import android.view.View;
 
 import com.geekband.moran.interfaces.BaseViewInterface;
-import com.geekband.moran.utils.TDevice;
 
 import butterknife.ButterKnife;
 
@@ -26,7 +25,7 @@ public abstract class BaseActivity extends Activity implements
     @Override
     protected void onDestroy() {
         super.onDestroy();
-        TDevice.hideSoftKeyboard(getCurrentFocus());
+//        TDevice.hideSoftKeyboard(getCurrentFocus());
         ButterKnife.unbind(this);
     }
 
