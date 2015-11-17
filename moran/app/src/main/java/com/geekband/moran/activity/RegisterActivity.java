@@ -116,6 +116,8 @@ public class RegisterActivity extends BaseActivity {
                     map.put("email" , email);
                     map.put("gbid", HttpManager.gid);
 
+                    L.et("parm" , username + "==" + pwd_again + "==" + email + "===" + HttpManager.gid);
+
                     JSONObject jsonObject = new JSONObject(map);
 
                     JsonObjectRequest jsonObjectRequest = new JsonObjectRequest(Request.Method.POST

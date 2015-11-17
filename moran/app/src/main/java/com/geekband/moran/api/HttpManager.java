@@ -6,8 +6,10 @@ import java.util.TreeMap;
 public class HttpManager {
 
     public static String mGeekBandApi = "http://moran.chinacloudapp.cn/moran/web";
+//    public static String mGeekBandApi = "http://newapi.aiganyisheng.cn";
 
     public static String mRegister = "/user/register";
+//    public static String mRegister = "/public/login";
     public static String gid = "G2015020152";
 
     public static TreeMap<String, String> sign;
